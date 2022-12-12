@@ -4,7 +4,6 @@
 @import "./base/placeholder";
 //Порядок важен! После vars если есть, идут placeholder, mixin
 @import "./base/common";
-@import "./components/logo";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/pluses";

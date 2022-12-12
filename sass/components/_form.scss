@@ -145,6 +145,7 @@ textarea {
     justify-content: center;
 }
 .form__button--send {
+    @extend %main__button;
     min-width: 200px;
     padding: 10px 28px;
 }

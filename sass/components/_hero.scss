@@ -1,13 +1,13 @@
 .main {
     flex: 1 1 auto;
 }
-.hero {
+.overlay {
     text-align: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-.overlay {
+.hero {
     padding-bottom: 200px;
     padding-top: 200px;
     max-width: 1600px;
@@ -18,29 +18,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain 0;
-}
-.hero-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
 
-    color: var(--primary-white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-.main-button {
-    text-align: center;
-    border-radius: 4px;
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-}
-.hero-button {
-    padding: 10px 32px;
-    min-width: 216px;
+        color: var(--primary-white-color);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    &__button {
+        @extend %main__button;
+        padding: 10px 32px;
+        min-width: 216px;
+    }
 }

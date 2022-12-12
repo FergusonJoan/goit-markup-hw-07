@@ -1,9 +1,29 @@
+.header {
+    border-bottom: 1px solid var(--header-border-color);
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        @extend %logo;
+        display: flex;
+        color: var(--logo-top);
+    }
+
+    &__logo--accent {
+        @extend %logo;
+        color: var(--accent-color);
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
     margin-left: 93px;
     &__list {
         display: flex;
+        @extend %list;
     }
     &__link {
         display: inline-flex;
@@ -44,6 +64,7 @@
     display: flex;
     margin-left: auto;
     &__list {
+        @extend %list;
     }
 
     &__item {
