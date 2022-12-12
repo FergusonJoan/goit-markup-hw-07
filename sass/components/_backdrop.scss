@@ -30,39 +30,42 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timiming-function);
-}
-.modal-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    &__close-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        position: absolute;
+        top: -32px;
+        right: -32px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--border-color);
+        border-radius: 50%;
+        transition: color var(--timiming-function);
+    }
+    &__icon {
+        fill: currentColor;
+        transition: color var(--timiming-function);
+    }
+}
 .close-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    top: -32px;
-    right: -32px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--border-color);
-    border-radius: 50%;
-    transition: color var(--timiming-function);
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: var(--accent-color);
+        transition: color var(--timiming-function);
+    }
 }
-.close-button:hover,
-.close-button:focus {
-    background-color: transparent;
-    color: var(--accent-color);
-    transition: color var(--timiming-function);
-}
-.modal-icon {
-    fill: currentColor;
-    transition: color var(--timiming-function);
-}
-.modal-icon:hover,
-.modal-icon:focus {
-    color: inherit;
-    transition: color var(--timiming-function);
+.modal__icon {
+    &:hover,
+    &:focus {
+        color: inherit;
+        transition: color var(--timiming-function);
+    }
 }

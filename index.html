@@ -357,51 +357,51 @@
                             <li class="address__elem"><a href="mailto:info@devstudio.com"
                                     class="address__addr">info@devstudio.com</a>
                             </li>
-                            <li class="footer__elem"><a href="tel:+380961111111" class=" address__addr">+38 096 111
+                            <li class="address__elem"><a href="tel:+380961111111" class=" address__addr">+38 096 111
                                     11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div class="footer-social-container">
-                    <p class="primary-title">приєднуйтесь</p>
-                    <ul class="list inner-team__list">
-                        <li class="inner-team__item">
-                            <a href="#" class="footer-link" aria-label="иконка инстаграм">
-                                <svg class=" footer-icon" width="20" height="20">
+                <article class="social">
+                    <p class="social__title">приєднуйтесь</p>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="иконка инстаграм">
+                                <svg class="social__icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a href="#" class="footer-link" aria-label="иконка твиттер">
-                                <svg class=" footer-icon" width="20" height="20">
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="иконка твиттер">
+                                <svg class="social__icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a href="#" class="footer-link" aria-label="иконка фейсбук">
-                                <svg class=" footer-icon" width="20" height="20">
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="иконка фейсбук">
+                                <svg class="social__icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a href="#" class="footer-link" aria-label="иконка линкедин">
-                                <svg class=" footer-icon" width="20" height="20">
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="иконка линкедин">
+                                <svg class="social__icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer-submit-form">
-                    <p class="primary-title">Підпишіться на розсилку</p>
-                    <input type="email" class="form__subcribe" name="email" id="email" placeholder="E-mail" required>
+                </article>
+                <div class="submit">
+                    <p class="submit__title">Підпишіться на розсилку</p>
+                    <input type="email" class="submit__imput" name="email" id="email" placeholder="E-mail" required>
                     <label for="email"></label>
-                    <button type="submit" class="form__button--submit">Підписатися
-                        <svg class="submit-icon" width="24" height="24">
+                    <button type="submit" class="submit__button">Підписатися
+                        <svg class="submit__icon" width="24" height="24">
                             <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
@@ -410,13 +410,14 @@
         <!-- BACKDROP -->
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
-                <div class="modal-container">
-                    <button class="close-button" data-modal-close type="button">
-                        <svg class="modal-icon" width="18" height="18" aria-label="иконка с крестиком">
+                <div class="modal__container">
+                    <button class="modal__close-button" data-modal-close type="button">
+                        <svg class="modal__icon" width="18" height="18" aria-label="иконка с крестиком">
                             <use href="./images/symbol-defs.svg#icon-close-black"></use>
                         </svg>
                     </button>
                 </div>
+                <!-- FORM -->
                 <form class="form">
                     <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
                     <label for="name" class="form__label">Ім'я</label>
@@ -440,13 +441,13 @@
                             <use href="./images/symbol-defs.svg#icon-email"></use>
                         </svg>
                     </div>
-                    <div class="form__field form__field--textarea">
-                        <label for="comment" class="form__label">Коментар</label>
+                    <div class="form__field form__field--textarea textarea">
+                        <label for="comment" class="form__label textarea-label">Коментар</label>
                         <textarea class="form__comment form__input" name="comment" id="comment" rows="7"
                             placeholder="Введіть текст"></textarea>
                     </div>
 
-                    <div class="form__checkbox">
+                    <div class="checkbox">
                         <label for="checkbox" class="checkbox__label">
                             <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox" id="checkbox"
                                 required>
@@ -460,8 +461,8 @@
                         </label>
                     </div>
 
-                    <div class="form__button--container">
-                        <button type="submit" class="form__button--send">Відправити</button>
+                    <div class="send">
+                        <button type="submit" class="send__button">Відправити</button>
                     </div>
                 </form>
             </div>

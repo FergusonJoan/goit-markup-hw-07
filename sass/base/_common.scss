@@ -38,3 +38,21 @@ aside {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+input {
+    padding: 10px 20px;
+    padding-left: 42px;
+    border-radius: 3px;
+    border: 1px solid var(--form-border-input);
+    outline-width: 0;
+    transition: border-color var(--timiming-function);
+}
+
+textarea {
+    resize: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid var(--form-border-input);
+    outline-width: 0;
+    transition: border-color var(--timiming-function);
+    margin-bottom: 20px;
+}
