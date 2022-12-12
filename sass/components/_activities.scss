@@ -1,0 +1,20 @@
+.section:nth-child(2n) {
+    background-color: var(--sec-bg-color);
+}
+
+.activities-list {
+    display: flex;
+    gap: 30px;
+}
+.activities-elem {
+    position: relative;
+    overflow: hidden;
+}
+.inner-activities {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    background-color: var(--inner-container-bg);
+    padding: 27px 0;
+}
